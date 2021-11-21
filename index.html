@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Home</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- ======== Web Home ======== -->
+
+    <div class="container">
+      <!-- <h1>комментарии</h1> -->
+      <div>
+        <!-- <button type="button" class="btn">Fetch comments</button> -->
+        <ul class="comment-list"></ul>
+      </div>
+      <div class="pagination">
+        <button type="button" class="btn-show-more">Show more</button>
+        <ul class="pagination-links"></ul>
+      </div>
+      <form class="form-box">
+        <input
+          class="form-name"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          autocomplete="off"
+        />
+        <textarea
+          cols="50"
+          rows="5"
+          required
+          autocomplete="off"
+          placeholder="comment"
+          name="text"
+          id="main_message"
+          class="form-text"
+        ></textarea>
+        <button class="btn-send">Send</button>
+      </form>
+    </div>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>
