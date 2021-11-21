@@ -10,8 +10,26 @@ p {
 }
 
 .container {
-  width: 768px;
+  width: 1024px;
   margin: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    width: 320px;
+  }
 }
 
 .comment-list {
@@ -29,8 +47,9 @@ p {
 
 .comment-item {
   /* width: 470px; */
-  text-overflow: ellipsis;
-  overflow: hidden;
+  /* text-overflow: ellipsis;
+  overflow: hidden; */
+  word-wrap: break-word;
   padding: 4px;
   outline: 1px solid black;
   border-radius: 6px;
@@ -64,10 +83,8 @@ p {
   margin-top: 6px;
   margin-bottom: 6px;
   resize: none;
-  /* size: 40; */
 }
 
 .btn-send {
-  /* display: block; */
   margin: auto;
 }
